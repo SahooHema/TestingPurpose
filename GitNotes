@@ -7,8 +7,14 @@ if using git for the first time
 6) git remote set-url origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
 7) git push -u origin main
 
-branh startegy
-
+CREATE BRANCH:-
+git checkout main
+git pull origin main
+git checkout -b test
+git add .
+git commit -m "msg"
+git push -u origin test
+note: next time only use git push
 
 
 

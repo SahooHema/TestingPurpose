@@ -1,1 +1,14 @@
-git commands
+if using git for the first time 
+1) create github account and git repository
+2) cmd-> cd project path
+3) git init
+4) git add .
+5) git commit -m "initalcommit"
+6) git remote set-url origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
+7) git push -u origin main
+
+branh startegy
+
+
+
+

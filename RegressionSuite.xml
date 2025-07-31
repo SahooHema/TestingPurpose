@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="API Automation Regression Suite" parallel="methods" thread-count="2" >
+  <test name="API Automation Scenarios Smoke Suite">
+	<classes>
+		<class name="pkgname.classname"></class>
+	</classes>
+	
+</test>
+<test name ="API Automation Scenarios Regression Suite">
+	<classes>
+		<class name="pkg.classname"></class>
+	</classes>
+</test>
+</suite>

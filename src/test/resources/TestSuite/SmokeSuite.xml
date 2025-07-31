@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Automation Regression Suite">
+  <test name="API Automation Scenarios Smoke Suite">
+	 <groups>
+		  <run>
+			  <include name="Smoke"></include>
+			  <include name="Regression"></include>
+		  </run>
+	  </groups> <!-- if using groups no need to use pkg and class-->
+<!-- <classes>
+           <class name="packagename.classname" />
+       </classes>
+<packages>
+	<package name="packagename"></package>
+</packages> 
+-->
+  </test>
+</suite>

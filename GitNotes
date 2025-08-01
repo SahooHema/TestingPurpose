@@ -25,4 +25,65 @@ git merge test
 git push origin main(all code of test branch will show in main branch)
 
 
+How to get conflict while merge(update same line of code in 2 branches):-
+git checkout test
+git add .
+git commit -m "addednewcode"
+
+git checkout main
+git add .
+git commit -m "addednewcode"
+note: update same line of code
+git merge test
+note:- error-> merge conflict
+either keep main code or test code
+git add .
+git commit -m "resolve commit"
+note:- in main branch it will show code 
+note: if need code in test as well, checkout test and git merge main
+
+note: Always keep main updated i.e. 
+git checkout main
+git pull origin main
+git checkout feature
+git merge main
+
+How to see latest commit, latest changes u have done, commit id? git log 
+note: it will show all the commit history with commit id
+
+Git rebase:- u r working on your branch in class A today , commit it but not merge to main.your friend tomorrow working on hotfix branch 
+in class A and merge it to main. in this , u need all changes thas has been merged to main.
+git checkout main
+git pull origin main
+
+git checkout feature
+git rebase main   # ← keep feature clean before pushing
+
+note: merge keeps all history old -new (it is in branch form)e.g. A-B-C below D-E-F, rebase keeps single line history(single line form)e.g. A-B-C-D-E
+
+git show and diff-> when u come from vacation want to see the work done in project -> git log-> git show  commit id
+git diff-> create branch, checkout, update code, commit changes. git checkout master -> git diff new branch, feature branch(will diff b/w both branches)
+
+git reset and its types-> if after adding file-> git add filename-> git reset -hard (undo all changes completely)
+git add filename-> git commit -m "hardreset" -> git reset -hard HEAD ~1
+
+interview question:-
+git branch strategy-> main branch, feature branch, hotfix branch are priorities
+develop, bugfixes, release version are low priority branch
+
+git status and it's types-> it is use for local branch 
+git status(red)-> changes not staged for commit 
+git status(green)-> changes to be commited
+not commit and working tree clean 
+
+How to resolve conflict?
+
+
+
+
+
+
+
+
+
 

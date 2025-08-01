@@ -29,7 +29,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static io.restassured.RestAssured.given;
 import java.io.File;
 public class Practice extends BaseTest{
-	@Test(description="delete1")
+	@Test()
 	public void verifyStatusCodeDelete() {
 		//ExtentReport.extentlog = ExtentReport.extentreport.startTest("verifySC404","Validate 404 status code - negative testcase”);
 // first parameter will be the name and second parameter will have the description about the test case
@@ -40,10 +40,6 @@ public class Practice extends BaseTest{
 						.delete("https://reqres.in/api/users/2");
 	  assertEquals(resp.getStatusCode(),204);
 	  System.out.println("***********************************PASS*******************************");
-	}
-	
-	public void verifyDelete() {
-		System.out.println("failed TC");
 	}
 
 }

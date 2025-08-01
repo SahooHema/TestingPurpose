@@ -76,7 +76,8 @@ git status(red)-> changes not staged for commit
 git status(green)-> changes to be commited
 not commit and working tree clean 
 
-How to resolve conflict?
+How to resolve conflict (if change in existing same line, add additional code)?
+
 
 
 
